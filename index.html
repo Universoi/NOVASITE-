@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine Inspirada no AliExpress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo">AliExpress</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produtos...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="nav-icons">
+                <a href="profile.html" class="account-link"><i class="fa-solid fa-user"></i> <span class="nav-text">Conta</span></a>
+                <div class="cart-icon-container">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-shopping-cart"></i> <span class="nav-text">Carrinho</span>
+                        <span id="cart-count" class="cart-count-badge">0</span>
+                    </a>
+                    <div id="mini-cart" class="mini-cart">
+                        <!-- O conteúdo do mini carrinho será injetado aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="product-grid"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vitrine Inspirada no AliExpress</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="cart.js"></script>
+</body>
+</html>
